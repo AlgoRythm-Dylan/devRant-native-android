@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rantLayoutParent">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/slight_rounded_corner"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/commentIncrement"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+                android:background="@drawable/upvote_btn_inactive"
+                android:textColor="?android:windowBackground"
+                android:padding="0dp"
+                android:text="@string/increment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="0"
+                android:id="@+id/commentScore"/>
+
+            <Button
+                android:id="@+id/commentDecrement"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:textSize="14sp"
+                android:background="@drawable/upvote_btn_inactive"
+                android:textColor="?android:windowBackground"
+                android:padding="0dp"
+                android:text="@string/decrement" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/commentProfilePic"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/commentProfilePic"
+                    android:id="@+id/commentUsername"
+                    android:paddingTop="5dp"
+                    android:text="AlgoRythm"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345"
+                    android:id="@+id/commentUserScore"
+                    android:layout_toRightOf="@id/commentProfilePic"
+                    android:layout_below="@id/commentUsername"
+                    android:background="@drawable/slight_rounded_corner"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plusplus"
+                    android:layout_toRightOf="@id/commentUserScore"
+                    android:layout_below="@id/commentUsername"
+                    android:background="@drawable/slight_rounded_corner"
+                    android:id="@+id/commentIsPlusPlus"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wtf"
+                android:id="@+id/commentText"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rantTags"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?devRant.roundedCornerGeneric"/>
+
+</LinearLayout>

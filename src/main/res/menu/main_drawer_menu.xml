@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single"
+        android:id="@+id/mainGroup">
+        <item android:title="Rants" android:icon="@drawable/icon_alert"/>
+        <item android:title="Stories" android:icon="@drawable/icon_stories"/>
+        <item android:title="Collabs" android:icon="@drawable/icon_collabs"/>
+        <item android:title="Notifications" android:icon="@drawable/icon_notifications"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/secondaryGroup">
+        <item android:title="Weekly rant" android:icon="@drawable/icon_calendar"/>
+        <item android:title="Search" android:icon="@drawable/icon_search"/>
+        <item android:title="Settings" android:icon="@drawable/icon_settings"/>
+        <item android:title="Supporters" android:icon="@drawable/icon_code"/>
+    </group>
+</menu>

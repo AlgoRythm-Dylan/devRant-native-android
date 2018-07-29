@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Custom attributes to make theming a bit easier! -->
+    <attr name="devRant.background" format="color"/>
+    <attr name="devRant.titleForeground" format="color"/>
+    <attr name="devRant.textEditBackground" format="color"/>
+    <attr name="devRant.roundedCornerGeneric" format="color"/>
+    <attr name="devRant.buttonBackground" format="color"/>
+    <attr name="devRant.textCaretColor" format="color"/>
+    <attr name="devRant.textInputResource" format="reference"/>
+    <attr name="devRant.textColor" format="color"/>
+
+    <!-- Base application theme -->
+    <style name="devRant_light" parent="Theme.Design.Light.NoActionBar">
+        <!-- The main color: shows up in titlebar -->
+        <item name="colorPrimary">@color/devRant.purple</item>
+        <item name="android:windowBackground">@color/devRant.white</item>
+        <!-- Gotta get that fancy cursor -->
+        <item name="devRant.textCaretColor">@color/devRant.red</item>
+        <item name="android:textCursorDrawable">@drawable/text_caret</item>
+        <!-- Custom attributes -->
+        <item name="devRant.titleForeground">@color/devRant.white</item>
+        <item name="devRant.roundedCornerGeneric">@color/devRant.gray</item>
+        <item name="devRant.buttonBackground">@color/devRant.red</item>
+        <item name="devRant.textColor">@color/soft_black</item>
+        <!-- Default widget styles -->
+        <item name="buttonStyle">@style/devRant_light.button</item>
+        <item name="editTextStyle">@style/devRant_light.editText</item>
+        <item name="android:textViewStyle">@style/devRant_light.textView</item>
+        <!-- Setup -->
+        <item name="android:statusBarColor">@color/devRant.purple</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="devRant_light.button">
+        <item name="android:background">@drawable/rounded_corner_button</item>
+        <item name="android:textColor">@color/devRant.white</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="devRant_light.editText">
+        <item name="android:background">@drawable/rounded_corner_generic</item>
+        <item name="android:textColor">@color/soft_black</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="devRant_light.textView">
+        <item name="android:textColor">@color/soft_black</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="devRant_dark" parent="devRant_light">
+        <item name="colorPrimary">@color/devRant.darkPurple</item>
+        <item name="android:windowBackground">@color/devRant.purple</item>
+        <item name="devRant.roundedCornerGeneric">@color/devRant.darkPurple</item>
+        <!-- Style up them widgets -->
+        <item name="editTextStyle">@style/devRant_dark.editText</item>
+        <item name="android:textViewStyle">@style/devRant_dark.textView</item>
+        <!-- Dat status bar tho -->
+        <item name="android:statusBarColor">@color/devRant.darkPurple</item>
+    </style>
+
+    <style name="devRant_dark.editText" parent="devRant_light.editText">
+        <item name="android:textColor">@color/devRant.gray</item>
+        <item name="android:textColorHint">@color/devRant.gray</item>
+    </style>
+
+    <style name="devRant_dark.textView" parent="devRant_light.textView">
+        <item name="android:textColor">@color/devRant.gray</item>
+    </style>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">devRant</string>
+    <string name="title_activity_login">Login</string>
+    <string name="increment">++</string>
+    <string name="decrement">- -</string>
+    <string name="title_activity_rant_view">rant_view</string>
+    <string name="plusplus">++</string>
+</resources>

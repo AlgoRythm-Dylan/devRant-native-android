@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RantView">
+
+    <!-- Window title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:padding="5dp"
+        android:text="Rant"
+        android:textAlignment="center"
+        android:textColor="?devRant.titleForeground"
+        android:fontFamily="@font/comfortaa_regular"
+        android:textSize="35sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rantViewArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Comments go here! (populated by an adapter) -->
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

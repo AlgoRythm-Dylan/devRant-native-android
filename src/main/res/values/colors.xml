@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="devRant.white">#FFFFFF</color>
+    <color name="devRant.gray">#CCCCD4</color>
+    <color name="devRant.red">#D55161</color>
+    <color name="devRant.purple">#40415A</color>
+    <color name="devRant.darkPurple">#383952</color>
+    <color name="soft_black">#3a3a3a</color>
+</resources>

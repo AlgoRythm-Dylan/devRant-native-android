@@ -1,0 +1,7 @@
+<resources>
+    <!--
+        I know this is for floating action buttons but I can't stop thinking it's
+        a fabulous margin so I'm going to keep it as a fabulous margin
+    -->
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
